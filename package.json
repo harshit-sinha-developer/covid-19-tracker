@@ -1,0 +1,22 @@
+{
+  "name": "covid-data",
+  "version": "1.0.0",
+  "description": "Data related to covid-19",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "coronavirus",
+    "covid",
+    "crawler"
+  ],
+  "author": "Harshit Sinha",
+  "license": "ISC",
+  "dependencies": {
+    "crawler": "^1.2.1",
+    "lowdb": "^1.0.0",
+    "node-cron": "^2.0.3",
+    "node-notifier": "^6.0.0"
+  }
+}
