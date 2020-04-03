@@ -31,7 +31,7 @@ npm run schedule
 ```
 5. Run scheduler in background
 ```
-pm2 run schedule
+pm2 start schedule.js
 ```
 
 ## Configuration
