@@ -29,17 +29,24 @@ npm start
 ```
 npm run schedule
 ```
+5. Run scheduler in background
+```
+pm2 run schedule
+```
 
 ## Configuration
 1. Select list of countries to get notifications for -
 Uncomment countries in the [enabled_countries_regions.js](https://github.com/harshit-sinha-developer/covid-19-tracker/blob/master/data/enabled_countries_regions.js)
+Default - USA, Canada, India, World
 
 2. Select status to display -
 Uncomment fields in `notificationFields` property in [config.js](https://github.com/harshit-sinha-developer/covid-19-tracker/blob/master/config.js)
+Default - Total Cases, New Cases
 
 3. Cron scheduling
 Update the field `cronScheduler` in [config.js](https://github.com/harshit-sinha-developer/covid-19-tracker/blob/master/config.js)
 Refer - https://support.acquia.com/hc/en-us/articles/360004224494-Cron-time-string-format
+Default - Once every four hours
 
 ## Versioning
 
