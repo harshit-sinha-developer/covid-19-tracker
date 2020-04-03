@@ -3,6 +3,7 @@ const HEADERS = ['country', 'total_cases', 'new_cases', 'total_deaths', 'new_dea
 const worldMeterCrawler = new Crawler({
     maxConnections: 10
 });
+const WORLDOMETERS_URL = 'https://www.worldometers.info/coronavirus/#countries';
 
 /**
  * returns {Promise<Object[]>}
@@ -10,7 +11,7 @@ const worldMeterCrawler = new Crawler({
 module.exports = async function() {
     return new Promise((resolve, reject) => {
         return worldMeterCrawler.queue([{
-            uri: 'https://www.worldometers.info/coronavirus/#countries',
+            uri: WORLDOMETERS_URL,
             callback: (error, res, done) => {
                 const data = [];
                 if(error){
