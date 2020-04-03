@@ -37,7 +37,7 @@ module.exports = data => {
                 sound: true, // Only Notification Center or Windows Toasters
                 wait: true // Wait with callback, until user action is taken against notification, does not apply to Windows Toasters as they always wait or notify-send as it does not support the wait option
             });
-        }, i * 4000);
+        }, i * 10000);
     }
     
 }
